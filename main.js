@@ -3,10 +3,11 @@ const hamburger = { name: "Cheese Burger", weight: 250 };
 const secondBurger = hamburger;
 secondBurger.name = 'Double Cheese Burger';
 secondBurger.weight = 500;
-console.log(hamburger.name); // ?
-console.log(secondBurger.name); // ?
+console.log(hamburger.name); // 'Double Cheese Burger' <---
+console.log(secondBurger.name); // 'Double Cheese Burger' <---
 // Senza lanciare il codice, riesci a prevedere cosa viene stampato in console?
 // Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
+//  Un solo oggetto  
 
 
 
@@ -22,11 +23,13 @@ const hamburger = {
 const secondBurger = { ...hamburger };
 secondBurger.ingredients[0] = "Salad";
 
-console.log(hamburger.ingredients[0]); // ?
-console.log(secondBurger.ingredients[0]); // ?
+console.log(hamburger.ingredients[0]); // 'Salad' <---
+console.log(secondBurger.ingredients[0]); // 'Salad' <--- 
 // P.S.: Ricordati che gli Array, come gli oggetti, sono dei Reference Type (Tipi di Riferimento)!
 // Senza lanciare il codice, riesci a prevedere cosa viene stampato in console?
 // Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
+// in questo caso tre oggetti 
+
 
 
 
@@ -49,6 +52,7 @@ const hamburger = {
 const secondBurger = structuredClone(hamburger);
 const thirdBurger = structuredClone(hamburger);
 // Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
+// 9 oggetti
 
 
 
