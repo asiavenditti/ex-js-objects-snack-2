@@ -28,7 +28,7 @@ console.log(secondBurger.ingredients[0]); // 'Salad' <---
 // P.S.: Ricordati che gli Array, come gli oggetti, sono dei Reference Type (Tipi di Riferimento)!
 // Senza lanciare il codice, riesci a prevedere cosa viene stampato in console?
 // Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
-// in questo caso tre oggetti 
+// in questo caso 3 oggetti 
 
 
 
@@ -57,7 +57,6 @@ const thirdBurger = structuredClone(hamburger);
 
 
 
-
 // 🏆 Code Question 4
 const chef = {
     name: "Chef Hyur",
@@ -77,8 +76,10 @@ const restaurant = {
     isOpen: false,
 };
 // Qual è il metodo migliore per clonare l’oggetto chef, e perché?
-// Qual è il metodo migliore per clonare l’oggetto restaurant, e perché?
+// Spread(...) poichè è l'unico metodo che può copiare le funzioni 
 
+// Qual è il metodo migliore per clonare l’oggetto restaurant, e perché?
+// structuredClone() è ideale per ottenere la copia di oggetti complessi 
 
 
 
