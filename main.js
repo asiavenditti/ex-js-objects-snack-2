@@ -140,6 +140,7 @@ const chef = {
     }
 }
 // Qual è il metodo migliore per clonare l’oggetto chef, e perché?
+// nessuno dei metodi che abbiamo visto perchè lo spread fa una copia superficiale e non intercetta gli oggetti annidati, mentre structuredClone e JSON.parse(JSON.stringify()) fanno una copia profonda ma non possono copiare le funzioni
 
 
 // 🎯 Snack  (Bonus)
